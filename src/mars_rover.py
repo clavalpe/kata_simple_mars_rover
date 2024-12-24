@@ -15,6 +15,9 @@ class MarsRover:
                 continue
 
             if current_command == "M":
-                self._y_position += 1
+                if self._direction == "N":
+                    self._y_position += 1
+                if self._direction == "E":
+                    self._x_position += 1
 
         return f"{self._x_position}:{self._y_position}:{self._direction}"
