@@ -8,6 +8,11 @@ class MarsRover:
         for current_command in command:
             if current_command == "R":
                 self._direction: str = "E"
+                continue
+
+            if current_command == "L":
+                self._direction: str = "W"
+                continue
 
             if current_command == "M":
                 self._y_position += 1
