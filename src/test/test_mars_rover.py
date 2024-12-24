@@ -21,3 +21,8 @@ class TestMarsRover:
         rover_position = MarsRover().execute("R")
 
         assert rover_position == "0:0:E"
+
+    def test_it_rotates_to_the_left_when_receives_command_L(self):
+        rover_position = MarsRover().execute("L")
+
+        assert rover_position == "0:0:W"
