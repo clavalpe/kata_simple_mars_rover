@@ -31,3 +31,10 @@ class TestMarsRover:
         rover_position = MarsRover().execute("MMRM")
 
         assert rover_position == "1:2:E"
+
+    def test_it_moves_to_position_2_3_N_when_receives_command_MMRMMLM(self):
+        rover_position = MarsRover().execute("MMRMMLM")
+
+        assert rover_position == "2:3:N"
+
+        
