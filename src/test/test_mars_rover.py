@@ -36,5 +36,3 @@ class TestMarsRover:
         rover_position = MarsRover().execute("MMRMMLM")
 
         assert rover_position == "2:3:N"
-
-        
