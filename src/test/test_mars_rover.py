@@ -6,3 +6,8 @@ class TestMarsRover:
         rover_position = MarsRover().execute('')
 
         assert rover_position == '0:0:N'
+
+    def test_it_moves_one_position_when_receives_command_M(self):
+        rover_position = MarsRover().execute('M')
+
+        assert rover_position == '0:1:N'
